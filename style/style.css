@@ -64,6 +64,19 @@ section {
           animation: textanimation 4s ease-in-out;
 }
 
+.class-undername1 {
+  padding-top: 29%;
+}
+
+.class-undername1 h1 {
+  position: absolute;
+  left: 18%;
+  font-size: 0.9em;
+  color: #000;
+  -webkit-animation: textanimation 5s ease-in-out;
+          animation: textanimation 5s ease-in-out;
+}
+
 @-webkit-keyframes textanimation {
   0% {
     opacity: 1;
