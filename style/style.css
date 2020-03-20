@@ -54,7 +54,7 @@ section {
 .title-undername h1 {
   position: absolute;
   left: 18%;
-  padding-top: 28%;
+  padding-top: 20%;
   font-size: 0.9em;
   color: #000;
   -webkit-animation: textanimation 4s ease-in-out;
