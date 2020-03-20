@@ -51,6 +51,10 @@ section {
           transform-origin: right;
 }
 
+.title-undername {
+  padding-top: 28%;
+}
+
 .title-undername h1 {
   position: absolute;
   left: 18%;
