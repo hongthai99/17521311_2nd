@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700"); //Import font into css
+body, html{
+    font-family: 'Montserrat';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center; //haha 
+    align-items: flex-start; //tam the xoa sau hihi
+}
+.page2{
+    background: #d1d1d1;
+}
+.home-make-name{
+    position: absolute;
+    left: 18%;
+    top:40%;
+    h1{
+        font-size: 2.5em;
+        color: #000;
+        animation:  textanimation 1s ease-in-out;
+        font-weight: bold;
+        transform-origin: left;
+
+        &::before {
+            content: " ";
+            width: 90%;
+            border-bottom: 7px solid #FFC400;
+            display: block;
+            animation: block-d 1s ease-in-out;
+            transform-origin: right;
+        }
+
+    }
+
+}
+.title-undername{
+    h1 {
+        position: absolute;
+        left: 18%;
+        padding-top: 40em;
+        font-size: 0.9em;
+        color: #000;
+        animation:  textanimation 4s ease-in-out;
+    }
+}
+@keyframes textanimation {
+
+    0% { opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -300, 0, 0, 1); }
+    4.1% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -125.912, 0, 0, 1); }
+    8.11% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -31.647, 0, 0, 1); }
+    12.11% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 5.53, 0, 0, 1); }
+    16.12% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 13.007, 0, 0, 1); }
+    27.23% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.352, 0, 0, 1); }
+    38.34% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.311, 0, 0, 1); }
+    60.56% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.007, 0, 0, 1); }
+    82.78% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+    100% { opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); } 
+  
+}
+@keyframes block-d {
+    from{
+        transform: scaleX(0);
+    }
+    to{
+        transform: scaleX(1);
+    }
+}
+.picture{
+    position: absolute;
+    width: 30%;
+    right: 10%;
+    padding-top: 10%;
+    animation: picture 0.5s ease;
+}
+@keyframes picture{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.itemturn {
+    position: absolute;
+    width: 12%;
+    top: 25%;
+    left: 75%;
+    animation: roll 9s ease;
+}
+.itemturn2{
+    position: absolute;
+    width: 20%;
+    top: 30%;
+    left: 59%;
+    animation: roll 9s ease;
+}
+@keyframes roll {
+    from{
+        transform: rotateZ(0deg);
+    }
+    to{
+        transform: rotateZ(360deg);
+    }
+}
